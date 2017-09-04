@@ -2,13 +2,13 @@
 
 Transform your strings XLSX file into JavaScript objects!
 
-<img src = https://github.com/FrankKair/threepojs/assets/threepo-logo.png width="50%" height="50%"/>
+<img src = https://raw.githubusercontent.com/FrankKair/threepojs/master/assets/threepo-logo.png width="40%" height="40%"/>
 
 If you have a XLSX file with all the localized strings of your project, you can use **threepojs** to parse the XLSX file into a JavaScript object containing all the strings.
 
-<img src = https://github.com/FrankKair/threepojs/blob/master/assets/xlsx_img.png width="50%" height="50%"/>
+<img src = https://raw.githubusercontent.com/FrankKair/threepojs/master/assets/xlsx_img.png width="50%" height="50%"/>
 
-<img src = https://github.com/FrankKair/threepojs/blob/master/assets/js_obj_img.png width="20%" height="20%"/>
+<img src = https://raw.githubusercontent.com/FrankKair/threepojs/master/assets/js_obj_img.png width="20%" height="20%"/>
 
 # Usage
 
