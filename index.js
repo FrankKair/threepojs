@@ -11,11 +11,15 @@ function promiseFrom(child) {
   });
 }
 
-const path_to_file = process.argv.slice(2, process.argv.length);
+const path_to_file = process.argv.slice(2, 3);
+if (path_to_file.length === 0) {
+  console.log('No input. Provide the path to a XLSX file.');
+  process.exit();
+}
 const childProcess = exec(`ruby xlsxtojson.rb ${path_to_file}`);
 
 promiseFrom(childProcess).then(function(result) {
-  const data = fs.readFileSync('strings.json', 'utf8')
+  const data = fs.readFileSync('strings.json', 'utf8');
   const jsObject = jsStringify(JSON.parse(data), null, 2);
   fs.writeFile("strings.js", jsObject, function(error) {
     if (error) {
