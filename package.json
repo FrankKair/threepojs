@@ -7,8 +7,7 @@
   "author": "Frank Kair <frankkair@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.5.0",
-    "javascript-stringify": "^1.6.0"
+    "xlsx-to-json": "^0.3.0"
   },
   "bin": {
     "threepojs": "./index.js"
