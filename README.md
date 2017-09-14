@@ -12,10 +12,12 @@ If you have a XLSX file with all the localized strings of your project, you can 
 
 # Usage
 
+Since we use object rest/spread, Node **8.3** is required.
+
 threepojs still isn't in **npm**, so in order to use it, you have to be in the project's folder and run:
 
-    $ ./index.js ~/path/my_strings.xlsx
+    $ node index.js ~/path/my_strings.xlsx
 
 # To do list
 
-Since this project just started, things are still a little rough around the edges. You can check the todo list [here](https://github.com/FrankKair/threepojs/issues).
+You can check the todo list [here](https://github.com/FrankKair/threepojs/issues).
