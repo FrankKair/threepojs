@@ -10,6 +10,12 @@ if (!filePath) {
   return;
 }
 
+const fileExtension = filePath.split('.').pop();
+if (fileExtension !== 'xlsx') {
+  console.log(`XLSX file expected. Received ${fileExtension}.`);
+  return;
+}
+
 xlsxToJson({ input: filePath, output: null }, (err, rows) => {
   if (err) {
     console.error(err);
