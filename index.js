@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const fs = require('fs');
-const xlsxToJson = require('xlsx-to-json');
-const jsStringify = require('javascript-stringify');
+import { writeFileSync } from 'fs';
+import xlsxToJson from 'xlsx-to-json';
+import jsStringify from 'javascript-stringify';
 
 const filePath = process.argv[2];
 
@@ -28,7 +28,7 @@ xlsxToJson({ input: filePath, output: null }, (err, rows) => {
   }, {});
 
   const strings = jsStringify(stringsObject, null, 2);
-  fs.writeFileSync('strings.js', `${strings}\n`);
+  writeFileSync('strings.js', `${strings}\n`);
 
   console.log('strings.js was generated successfully!');
 });
