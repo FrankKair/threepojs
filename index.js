@@ -4,7 +4,6 @@ import xlsxToJson from 'xlsx-to-json';
 import jsStringify from 'javascript-stringify';
 
 const filePath = process.argv[2];
-
 if (!filePath) {
   console.log('No input. Provide the path to a XLSX file.');
   return;
