@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { writeFileSync } from 'fs';
-import xlsxToJson from 'xlsx-to-json';
-import jsStringify from 'javascript-stringify';
+const { writeFileSync } = require('fs');
+const xlsxToJson = require('xlsx-to-json');
+const jsStringify = require('javascript-stringify');
 
 const filePath = process.argv[2];
 if (!filePath) {

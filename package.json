@@ -1,6 +1,6 @@
 {
   "name": "threepojs",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Transform your strings XLSX file into JavaScript objects!",
   "main": "index.js",
   "repository": "git@github.com:FrankKair/threepojs.git",
